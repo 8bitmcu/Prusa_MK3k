@@ -66,6 +66,7 @@ I'm running 3 [Sovol SH01](https://s.click.aliexpress.com/e/_oFkCFo7) units for 
 
 Out of my collection of 20+ build plates, my favorite is this [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX). 
 
+![mk3k](assets/Mk3k.jpg)
 
 # Printed STLs
 
