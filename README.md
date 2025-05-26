@@ -26,6 +26,10 @@ Before Klipper, I was very happy with OctoPrint which ran great on a Pi4. Klippe
 
 The power supply on my machine crapped out pretty early after installing Klipper. Likely unrelated, but I decided to upgrade to a bigger [Meanwell 350w](https://s.click.aliexpress.com/e/_oExWxLh) unit just in case. The 350w power supply now powers the Pi4, LED lights and my MMU.
 
+### BTT MMB Cubic 1.0 with 6028 blower
+
+I'm using the [BTT MMB Cubic](https://s.click.aliexpress.com/e/_omvtHcw) expansion board to drive 3 fans with Klipper. A 50mm fan for the Raspberry Pi, a 40mm fan for the electronics enclosure and a [6028](https://s.click.aliexpress.com/e/_ooHfhSW) part cooling fan
+
 ### KMMP Power-off Module
 
 This [Melllow Fly KMMP](https://s.click.aliexpress.com/e/_oBRjS79) module converts the 24v into 5v that the Pi needs and also doubles a safety power down for the raspberry pi.
@@ -61,3 +65,43 @@ I'm running 3 [Sovol SH01](https://s.click.aliexpress.com/e/_oFkCFo7) units for 
 ### Build plates
 
 Out of my collection of 20+ build plates, my favorite is this [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX). 
+
+
+# Printed STLs
+
+
+### Hard feet
+
+My Prusa sits on these [hard feet](https://www.thingiverse.com/thing:2805753/) with some [felt](https://s.click.aliexpress.com/e/_oEwN37o) taped to the bottom
+
+### ADXL345 / S2DW mount
+
+I'm using this [bed mounted S2DW mount](https://www.printables.com/model/901962-btt-adxl345-s2dw-bedslinger-mount) 
+
+### Extruder motor rotation indicator
+
+This [NEMA motor rotation indicator](https://www.thingiverse.com/thing:2638857) will rotate along with your extruder motor. You will need a [8x3mm magnet](https://s.click.aliexpress.com/e/_oCzKxDc)
+
+### T-Slot cover
+
+The [T-slot cover set](https://www.printables.com/model/1678-original-prusa-i3-mk3-3030-t-slot-extrusion-channe) prevents debris and dust from collecting inside your 3030 extrusion
+
+### Prusa RPi4 mount
+
+This [Prusa MK3S RPi4](https://www.printables.com/model/74438-prusa-mk3s-rpi4b-mount-for-geekworm-aluminium-case) mount is compatible with full [aluminium enclosures](https://s.click.aliexpress.com/e/_oDRr7sw)
+
+### Electronics Enclosure
+
+While I really like this [Big Einsy case](https://www.printables.com/model/31558-big-einsy-case) with this [40mm fan lid](https://www.printables.com/model/538337-new-big-einsy-case-lid-with-40mm-fan) I might create my own at somepoint.
+
+### Meanwell LRS-350-24 350w Power Supply mounts
+
+I'm using [these STLs](https://www.printables.com/model/10432-prusa-mk3-mean-well-lrs-350-specific-mount) to mount my Meanwell Powersupply unit to my MK3s+
+
+### TZ 2.0 adapter & 6028 blower fan
+
+I created this [TZ 2.0 adapter](https://www.printables.com/model/1280924-tz-20-adapter-for-mk3s) for the MK3s+, along with the [6028 blower](https://www.printables.com/model/1308000-tz-20-6028-fan-delta-p-fan-duct-adapter-for-mk3s) adapter for it
+
+### LCD Delete
+
+As a finishing touch, I removed the front LCD and added a [customizable front plate](https://www.printables.com/model/1308004-prusa-front-plate-for-lcd-delete)
