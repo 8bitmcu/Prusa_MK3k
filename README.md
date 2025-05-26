@@ -70,7 +70,6 @@ Out of my collection of 20+ build plates, my favorite is this [JUUPINE PEI Sheet
 
 # Printed STLs
 
-
 ### Hard feet
 
 My Prusa sits on these [hard feet](https://www.thingiverse.com/thing:2805753/) with some [felt](https://s.click.aliexpress.com/e/_oEwN37o) taped to the bottom
@@ -106,3 +105,9 @@ I created this [TZ 2.0 adapter](https://www.printables.com/model/1280924-tz-20-a
 ### LCD Delete
 
 As a finishing touch, I removed the front LCD and added a [customizable front plate](https://www.printables.com/model/1308004-prusa-front-plate-for-lcd-delete)
+
+
+# Slicer Settings
+
+My #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
+Optionally if you want to configure the Klipper bed picture as seen above, you can [download it here](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3s_klipper.svg)
