@@ -15,16 +15,16 @@ I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Kli
 # Additional Mods and Upgrades
 
 - ~~Nylock~~ [Silicone Bed Level Mod](https://www.schweinert.com/silicone-bed-level-mod-prusa-mk3/): I'm using these [silicone tubes](https://s.click.aliexpress.com/e/_oCNcppl) with good success. I'm sure these [bed leving columns](https://s.click.aliexpress.com/e/_olThvdz) would work too if cut to length.
-- [Raspberry Pi 4](https://s.click.aliexpress.com/e/_on8JnaX) and 5" Touch Screen: Before Klipper, I was very happy with OctoPrint which ran great on a Pi4. Klipper does requires a Raspberry Pi. Another alternative would be this [BTT Pi 2](https://s.click.aliexpress.com/e/_oEV29sb) which can be powered from screw terminals. I've used various displays and finally settled on this [5" MIPI Display](https://s.click.aliexpress.com/e/_onpiPqB) with a [longer DSI cable](https://s.click.aliexpress.com/e/_oB68LnZ). 5-7" seems like a good sweet spot in screen sizes for klipperscreen.
+- [Raspberry Pi 4](https://s.click.aliexpress.com/e/_on8JnaX) and [5" MIPI Display](https://s.click.aliexpress.com/e/_onpiPqB): Before Klipper, I was very happy with OctoPrint which ran great on a Pi4. Klipper does requires a Raspberry Pi. Another alternative would be this [BTT Pi 2](https://s.click.aliexpress.com/e/_oEV29sb) which can be powered from screw terminals.  I'm using a 5" MIPI display with a [longer DSI cable](https://s.click.aliexpress.com/e/_oB68LnZ). 5-7" seems like a good sweet spot in screen sizes for klipperscreen.
 - [Meanwell LRS-350-24 350w Power Supply](https://s.click.aliexpress.com/e/_oExWxLh): The power supply on my machine crapped out pretty early after installing Klipper. Likely unrelated, but I decided to upgrade to a bigger Meanwell 350w unit just in case. The power supply now powers the Pi4, LED lights and my MMU.
 - [BTT MMB Cubic 1.0](https://s.click.aliexpress.com/e/_omvtHcw) with 6028 blower: I'm using the BTT MMB Cubic expansion board to drive 3 fans with Klipper. A 50mm fan for the Raspberry Pi, a 40mm fan for the electronics enclosure and a [6028](https://s.click.aliexpress.com/e/_ooHfhSW) part cooling fan
 - [Mellow KMMP Power-off Module](https://s.click.aliexpress.com/e/_oBRjS79): converts the 24v into 5v that the Pi needs and also doubles a safety power down for the raspberry pi.
 - [TZ 2.0 V6 hotend](https://s.click.aliexpress.com/e/_oofLEeJ): Rated at twice the flow rate of a normal v6 hotend.
 - [MK4 0.9 degree steppers](https://s.click.aliexpress.com/e/_ok2TuVv): As per Prusa, the MK4 steppers should reduce VFA's, altough I haven't really tested that.
 - [ERCF v2 MMU](https://s.click.aliexpress.com/e/_opTF3ZV) and [Seleadlab Filament Cutter](https://s.click.aliexpress.com/e/_okhysFz) kit. But I never took the time to get the MMU fully configured and running smoothly.
-- [BTT S2DW](https://s.click.aliexpress.com/e/_okpRPtH): I'm a big fan of any RP2040 based mcu for klipper because of how easy they are to flash. I'm using the BTT S2DW which claims to be more accurate than an ADXL345, although I'm sure either would work great.
+- [BTT S2DW](https://s.click.aliexpress.com/e/_okpRPtH) or [Mellow LIS2DW](https://s.click.aliexpress.com/e/_oncQHKS): I'm a big fan of any RP2040 based mcu for klipper because of how easy they are to flash. I'm using the BTT S2DW which claims to be more accurate than an ADXL345, although I'm sure either would work great.
 - [MK4 Dual LED Light Bar 24v](https://s.click.aliexpress.com/e/_opsoeDh): I'm using a similar kit to this.
-- [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX): Out of my collection of 20+ build plates, my favorite is this cheap plate. 
+- [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX): Out of my collection of 20+ build plates, my favorite is this cheap PEI plate. 
 
 ![mk3k](assets/Mk3k.jpg)
 
