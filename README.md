@@ -14,100 +14,33 @@ I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Kli
 
 # Additional Mods and Upgrades
 
-### ~~Nylock~~ Silicone Bed Level Mod
-
-I followed this [Silicone Bed Level Mod](https://www.schweinert.com/silicone-bed-level-mod-prusa-mk3/) guide. I'm using these [silicone tubes](https://s.click.aliexpress.com/e/_oCNcppl) with good success. I'm sure these [bed leving columns](https://s.click.aliexpress.com/e/_olThvdz) would work too if cut to length.
-
-### Raspberry Pi 4 and 5" Touch Screen
-
-Before Klipper, I was very happy with OctoPrint which ran great on a Pi4. Klipper does requires a [Raspberry Pi](https://s.click.aliexpress.com/e/_on8JnaX). Another alternative would be this [BTT Pi 2](https://s.click.aliexpress.com/e/_oEV29sb) which can be powered from screw terminals. I've used various displays and finally settled on this [5" MIPI Display](https://s.click.aliexpress.com/e/_onpiPqB) with a [longer DSI cable](https://s.click.aliexpress.com/e/_oB68LnZ). 5-7" seems like a good sweet spot in screen sizes for klipperscreen.
-
-### Meanwell LRS-350-24 350w Power Supply
-
-The power supply on my machine crapped out pretty early after installing Klipper. Likely unrelated, but I decided to upgrade to a bigger [Meanwell 350w](https://s.click.aliexpress.com/e/_oExWxLh) unit just in case. The 350w power supply now powers the Pi4, LED lights and my MMU.
-
-### BTT MMB Cubic 1.0 with 6028 blower
-
-I'm using the [BTT MMB Cubic](https://s.click.aliexpress.com/e/_omvtHcw) expansion board to drive 3 fans with Klipper. A 50mm fan for the Raspberry Pi, a 40mm fan for the electronics enclosure and a [6028](https://s.click.aliexpress.com/e/_ooHfhSW) part cooling fan
-
-### KMMP Power-off Module
-
-This [Melllow Fly KMMP](https://s.click.aliexpress.com/e/_oBRjS79) module converts the 24v into 5v that the Pi needs and also doubles a safety power down for the raspberry pi.
-
-### TZ 2.0 v6-style hotend
-
-Rated at twice the flow rate of a normal v6 hotend, I opted to try out this [TZ 2.0 V6 hotend](https://s.click.aliexpress.com/e/_oofLEeJ).
-
-### MK4 0.9 degree steppers
-
-As per Prusa, the [MK4 steppers](https://s.click.aliexpress.com/e/_ok2TuVv) should reduce VFA's, altough I haven't really tested that.
-
-### ERCF v2 MMU
-
-I went with the [Fysetc ERCF v2 12-channel kit](https://s.click.aliexpress.com/e/_opTF3ZV) and the [Seleadlab Filament Cutter](https://s.click.aliexpress.com/e/_okhysFz) kit. But I never took the time to get the MMU fully configured and running smoothly.
-
-### Input Shaping module
-
-I'm a big fan of any RP2040 based mcu for klipper because of how easy they are to flash. I'm using this [BTT S2DW](https://s.click.aliexpress.com/e/_okpRPtH) which claims to be more accurate than an ADXL345, although I'm sure both would work great.
-
-### LED Light bar
-
-I'm using a similar kit to this [MK4 Dual LED Light Bar 24v](https://s.click.aliexpress.com/e/_opsoeDh) kit.
-
-### Filament Storage
-
-I'm using these [vacuum seal bags](https://s.click.aliexpress.com/e/_ooiCgQT) and the included automatic pump
-
-### Filament drying and MMU bays
-
-I'm running 3 [Sovol SH01](https://s.click.aliexpress.com/e/_oFkCFo7) units for general drying and two [Prusa drybox enclosure](https://s.click.aliexpress.com/e/_oBO5Jmf) connected to my MMU.
-
-### Build plates
-
-Out of my collection of 20+ build plates, my favorite is this [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX). 
+- ~~Nylock~~ [Silicone Bed Level Mod](https://www.schweinert.com/silicone-bed-level-mod-prusa-mk3/): I'm using these [silicone tubes](https://s.click.aliexpress.com/e/_oCNcppl) with good success. I'm sure these [bed leving columns](https://s.click.aliexpress.com/e/_olThvdz) would work too if cut to length.
+- [Raspberry Pi 4](https://s.click.aliexpress.com/e/_on8JnaX) and 5" Touch Screen: Before Klipper, I was very happy with OctoPrint which ran great on a Pi4. Klipper does requires a Raspberry Pi. Another alternative would be this [BTT Pi 2](https://s.click.aliexpress.com/e/_oEV29sb) which can be powered from screw terminals. I've used various displays and finally settled on this [5" MIPI Display](https://s.click.aliexpress.com/e/_onpiPqB) with a [longer DSI cable](https://s.click.aliexpress.com/e/_oB68LnZ). 5-7" seems like a good sweet spot in screen sizes for klipperscreen.
+- [Meanwell LRS-350-24 350w Power Supply](https://s.click.aliexpress.com/e/_oExWxLh): The power supply on my machine crapped out pretty early after installing Klipper. Likely unrelated, but I decided to upgrade to a bigger Meanwell 350w unit just in case. The power supply now powers the Pi4, LED lights and my MMU.
+- [BTT MMB Cubic 1.0](https://s.click.aliexpress.com/e/_omvtHcw) with 6028 blower: I'm using the BTT MMB Cubic expansion board to drive 3 fans with Klipper. A 50mm fan for the Raspberry Pi, a 40mm fan for the electronics enclosure and a [6028](https://s.click.aliexpress.com/e/_ooHfhSW) part cooling fan
+- [Mellow KMMP Power-off Module](https://s.click.aliexpress.com/e/_oBRjS79): converts the 24v into 5v that the Pi needs and also doubles a safety power down for the raspberry pi.
+- [TZ 2.0 V6 hotend](https://s.click.aliexpress.com/e/_oofLEeJ): Rated at twice the flow rate of a normal v6 hotend.
+- [MK4 0.9 degree steppers](https://s.click.aliexpress.com/e/_ok2TuVv): As per Prusa, the MK4 steppers should reduce VFA's, altough I haven't really tested that.
+- [ERCF v2 MMU](https://s.click.aliexpress.com/e/_opTF3ZV) and [Seleadlab Filament Cutter](https://s.click.aliexpress.com/e/_okhysFz) kit. But I never took the time to get the MMU fully configured and running smoothly.
+- [BTT S2DW](https://s.click.aliexpress.com/e/_okpRPtH): I'm a big fan of any RP2040 based mcu for klipper because of how easy they are to flash. I'm using the BTT S2DW which claims to be more accurate than an ADXL345, although I'm sure either would work great.
+- [MK4 Dual LED Light Bar 24v](https://s.click.aliexpress.com/e/_opsoeDh): I'm using a similar kit to this.
+- [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX): Out of my collection of 20+ build plates, my favorite is this cheap plate. 
 
 ![mk3k](assets/Mk3k.jpg)
 
 # Printed STLs
 
-### Hard feet
-
-My Prusa sits on these [hard feet](https://www.thingiverse.com/thing:2805753/) with some [felt](https://s.click.aliexpress.com/e/_oEwN37o) taped to the bottom
-
-### ADXL345 / S2DW mount
-
-I'm using this [bed mounted S2DW mount](https://www.printables.com/model/901962-btt-adxl345-s2dw-bedslinger-mount) 
-
-### Extruder motor rotation indicator
-
-This [NEMA motor rotation indicator](https://www.thingiverse.com/thing:2638857) will rotate along with your extruder motor. You will need a [8x3mm magnet](https://s.click.aliexpress.com/e/_oCzKxDc)
-
-### T-Slot cover
-
-The [T-slot cover set](https://www.printables.com/model/1678-original-prusa-i3-mk3-3030-t-slot-extrusion-channe) prevents debris and dust from collecting inside your 3030 extrusion
-
-### Prusa RPi4 mount
-
-This [Prusa MK3S RPi4](https://www.printables.com/model/74438-prusa-mk3s-rpi4b-mount-for-geekworm-aluminium-case) mount is compatible with full [aluminium enclosures](https://s.click.aliexpress.com/e/_oDRr7sw)
-
-### Electronics Enclosure
-
-While I really like this [Big Einsy case](https://www.printables.com/model/31558-big-einsy-case) with this [40mm fan lid](https://www.printables.com/model/538337-new-big-einsy-case-lid-with-40mm-fan) I might create my own at somepoint.
-
-### Meanwell LRS-350-24 350w Power Supply mounts
-
-I'm using [these STLs](https://www.printables.com/model/10432-prusa-mk3-mean-well-lrs-350-specific-mount) to mount my Meanwell Powersupply unit to my MK3s+
-
-### TZ 2.0 adapter & 6028 blower fan
-
-I created this [TZ 2.0 adapter](https://www.printables.com/model/1280924-tz-20-adapter-for-mk3s) for the MK3s+, along with the [6028 blower](https://www.printables.com/model/1308000-tz-20-6028-fan-delta-p-fan-duct-adapter-for-mk3s) adapter for it
-
-### LCD Delete
-
-As a finishing touch, I removed the front LCD and added a [customizable front plate](https://www.printables.com/model/1308004-prusa-front-plate-for-lcd-delete)
-
+- [Hard feet](https://www.thingiverse.com/thing:2805753/): My Prusa sits on these hard feet with some [felt](https://s.click.aliexpress.com/e/_oEwN37o) taped to the bottom
+- [ADXL345 / S2DW mount](https://www.printables.com/model/901962-btt-adxl345-s2dw-bedslinger-mount) 
+- [NEMA motor rotation indicator](https://www.thingiverse.com/thing:2638857): Will rotate along with your extruder motor. You will need a [8x3mm magnet](https://s.click.aliexpress.com/e/_oCzKxDc)
+- [T-slot cover set](https://www.printables.com/model/1678-original-prusa-i3-mk3-3030-t-slot-extrusion-channe): prevents debris and dust from collecting inside your 3030 extrusion
+- [Prusa MK3S RPi4](https://www.printables.com/model/74438-prusa-mk3s-rpi4b-mount-for-geekworm-aluminium-case): mount is compatible with full [aluminium enclosures](https://s.click.aliexpress.com/e/_oDRr7sw)
+- [Big Einsy case](https://www.printables.com/model/31558-big-einsy-case) with this [40mm fan lid](https://www.printables.com/model/538337-new-big-einsy-case-lid-with-40mm-fan)
+- [Meanwell LRS-350-24 350w Power Supply mounts](https://www.printables.com/model/10432-prusa-mk3-mean-well-lrs-350-specific-mount): to mount my Meanwell Powersupply unit to my MK3s+
+- [TZ 2.0 adapter](https://www.printables.com/model/1280924-tz-20-adapter-for-mk3s) for the MK3s+, along with the [6028 blower](https://www.printables.com/model/1308000-tz-20-6028-fan-delta-p-fan-duct-adapter-for-mk3s) adapter for it
+- [Customizable front plate](https://www.printables.com/model/1308004-prusa-front-plate-for-lcd-delete): As a finishing touch, I removed the front LCD and added a front plate.
 
 # Slicer Settings
 
-My #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
-Optionally if you want to configure the Klipper bed picture as seen above, you can [download it here](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3s_klipper.svg)
+- My #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
+- Optionally if you want to configure the Klipper bed picture as seen above, you can [download it here](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3s_klipper.svg)
