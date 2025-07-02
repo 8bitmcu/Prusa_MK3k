@@ -9,8 +9,7 @@ I've been running this [Fysetc Prusa MK3s+ clone](https://s.click.aliexpress.com
 
 # Installing Klipper
 
-I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade) to get going initially. Recently I've pulled some changes from [project802's updated guide](https://github.com/project802/Klipper-Input-Shaping-MK3S-Upgrade)
-
+[charminULTRA's Klipper guide](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade) is all you need to follow to get your printer up and running Klipper. To print faster than the MK3.5 print profiles, I recommend upgrading to a high-flow hotend. The MK4S+ profiles have been working really well for me using a [TZ 2.0 V6 hotend](https://s.click.aliexpress.com/e/_oofLEeJ).
 
 # Additional Mods and Upgrades
 
@@ -21,7 +20,7 @@ I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Kli
 - [Mellow KMMP Power-off Module](https://s.click.aliexpress.com/e/_oBRjS79): converts the 24v into 5v that the Pi needs and also doubles a safety power down for the raspberry pi.
 - [TZ 2.0 V6 hotend](https://s.click.aliexpress.com/e/_oofLEeJ): Rated at twice the flow rate of a normal v6 hotend.
 - [MK4 0.9 degree steppers](https://s.click.aliexpress.com/e/_ok2TuVv): As per Prusa, the MK4 steppers should reduce VFA's, altough I haven't really tested that.
-- [ERCF v2 MMU](https://s.click.aliexpress.com/e/_opTF3ZV) and [Seleadlab Filament Cutter](https://s.click.aliexpress.com/e/_okhysFz) kit. But I never took the time to get the MMU fully configured and running smoothly.
+- [ERCF v2 MMU](https://s.click.aliexpress.com/e/_opTF3ZV) and [Seleadlab Filament Cutter](https://s.click.aliexpress.com/e/_okhysFz) kit. But I never took the time to get the MMU fully configured and running smoothly. I will post my settings and configuration once I do.
 - [BTT S2DW](https://s.click.aliexpress.com/e/_okpRPtH) or [Mellow LIS2DW](https://s.click.aliexpress.com/e/_oncQHKS): I'm a big fan of any RP2040 based mcu for klipper because of how easy they are to flash. I'm using the BTT S2DW which claims to be more accurate than an ADXL345, although I'm sure either would work great.
 - [MK4 Dual LED Light Bar 24v](https://s.click.aliexpress.com/e/_opsoeDh): I'm using a similar kit to this.
 - [JUUPINE PEI Sheet](https://s.click.aliexpress.com/e/_oEQbZIX): Out of my collection of 20+ build plates, my favorite is this cheap PEI plate. 
@@ -31,7 +30,7 @@ I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Kli
 # Printed STLs
 
 - [Hard feet](https://www.thingiverse.com/thing:2805753/): My Prusa sits on these hard feet with some [felt](https://s.click.aliexpress.com/e/_oEwN37o) taped to the bottom
-- [ADXL345 / S2DW mount](https://www.printables.com/model/901962-btt-adxl345-s2dw-bedslinger-mount) 
+- [ADXL345 / S2DW mount](https://www.printables.com/model/901962-btt-adxl345-s2dw-bedslinger-mount): I just print this everytime I need to recalibrate
 - [NEMA motor rotation indicator](https://www.thingiverse.com/thing:2638857): Will rotate along with your extruder motor. You will need a [8x3mm magnet](https://s.click.aliexpress.com/e/_oCzKxDc)
 - [T-slot cover set](https://www.printables.com/model/1678-original-prusa-i3-mk3-3030-t-slot-extrusion-channe): prevents debris and dust from collecting inside your 3030 extrusion
 - [Prusa MK3S RPi4](https://www.printables.com/model/74438-prusa-mk3s-rpi4b-mount-for-geekworm-aluminium-case): mount is compatible with full [aluminium enclosures](https://s.click.aliexpress.com/e/_oDRr7sw)
@@ -42,5 +41,22 @@ I've followed [charminULTRA's Klipper guide](https://github.com/charminULTRA/Kli
 
 # Slicer Settings
 
-- My #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
-- Optionally if you want to configure the Klipper bed picture as seen above, you can [download it here](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3s_klipper.svg)
+- With a [TZ 2.0 hotend](https://s.click.aliexpress.com/e/_oofLEeJ) and 6028 part cooling fan, I now am using the MK4S+ print profile with good success. Follow [this procedure](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade?tab=readme-ov-file#step-5-customize-prusaslicer-for-klipper-do-not-print-from-the-slicer-until-completing-step-6) to copy Prusa's print profiles.
+- My [#SpeedBoatRace](https://www.youtube.com/watch?v=YjW9siPePDk) settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
+- Optionally you can configure the Klipper bed picture as seen above.
+    1. Download [mk3s_klipper.svg](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3s_klipper.svg) and [mk3_bed.stl](https://raw.githubusercontent.com/8bitmcu/Prusa_MK3k/refs/heads/main/mk3_bed.stl)
+    2. Open PrusaSlicer, navigate to "Printers". Under the "General" look for "Bed Shape" and click the "Set" button next to it.
+    3. Shape should be rectangular with a 250x210 size. Load the svg as the Texture and the stl as the Model.
+
+# Mainsail "Printables" theme
+
+![printables](https://github.com/8bitmcu/mainsail-printables/blob/master/screenshot.jpg?raw=true)
+
+You can get your instance of Mainsail to look more like the Printables website using this [custom theme](https://docs.mainsail.xyz/overview/features/themes/themes#printables). Both Dark and Light mode available.
+
+
+# #SpeedBoatRace
+
+[![Video: #SpeedBoatRace](https://img.youtube.com/vi/YjW9siPePDk/0.jpg)](https://youtu.be/YjW9siPePDk)
+
+These #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
