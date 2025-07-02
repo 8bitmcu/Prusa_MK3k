@@ -60,3 +60,12 @@ You can get your instance of Mainsail to look more like the Printables website u
 [![Video: #SpeedBoatRace](https://img.youtube.com/vi/YjW9siPePDk/0.jpg)](https://youtu.be/YjW9siPePDk)
 
 These #SpeedBoatRace settings can be [downloaded here](https://github.com/8bitmcu/Prusa_MK3k/raw/refs/heads/main/SpeedBoatRace_PrintProfile.3mf)
+
+# Fast Macros
+
+![macros](https://github.com/8bitmcu/Prusa-Fast-Macros/raw/main/macros.png?raw=true)
+
+My personal collection of [fast macros](https://github.com/8bitmcu/Prusa-Fast-Macros) that I use with klipper. Most of them have been optimized for speed. Some are there for convinience.
+
+
+
